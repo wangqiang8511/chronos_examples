@@ -1,0 +1,17 @@
+{
+ "name": "dependent_test",
+ "container": {
+   "type": "DOCKER",
+   "image": "ubuntu",
+   "network": "BRIDGE",
+   "volumes": [{"containerPath": "/var/log/", "hostPath":"/logs/", "mode":"RW"}]
+ },
+ "parents": [
+   "docker_test"
+ ],
+ "command": "cat /etc/resolv.conf",
+ "cpus": "0.1",
+ "mem": "256",
+ "retries":2,
+ "uris": []
+}

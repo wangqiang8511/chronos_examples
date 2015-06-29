@@ -1,0 +1,15 @@
+{
+ "schedule": "R\/2015-6-29T00:00:00Z\/PT2M",
+ "name": "docker_test",
+ "container": {
+  "type": "DOCKER",
+  "image": "ubuntu",
+  "network": "BRIDGE",
+  "volumes": [{"containerPath": "/var/log/", "hostPath":"/logs/", "mode":"RW"}]
+ },
+ "command": "cat /etc/hosts",
+ "cpus": "0.1",
+ "mem": "256",
+ "retries":2,
+ "uris": []
+}
