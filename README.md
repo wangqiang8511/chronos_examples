@@ -4,7 +4,12 @@ Basic examples of Mesos Chronos
 
 # API reference
 
-Chronos Rest API [https://mesos.github.io/chronos/docs/api.html]
+[Chronos Rest API](https://mesos.github.io/chronos/docs/api.html)
+
+# How to start chronos
+
+Start chronos with HA in marathon using docker containers. 
+[See Here](https://github.com/wangqiang8511/marathon_utils)
 
 # Add basic example jobs
 
